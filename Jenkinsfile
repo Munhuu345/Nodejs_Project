@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-user/your-nodejs-repo.git'
+                git 'https://github.com/Munhuu345/Nodejs_Project.git'
             }
         }
 
