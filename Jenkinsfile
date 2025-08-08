@@ -10,12 +10,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Munhuu345/Nodejs_Project.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
@@ -24,20 +18,20 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'npm test' // or 'npm run test' depending on your script
+                sh 'npm test'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'npm run build' // if your project has a build step
+                sh 'npm run build'
             }
         }
 
         // Optional deployment stage
         // stage('Deploy') {
         //     steps {
-        //         sh './deploy.sh' // or however you deploy
+        //         sh './deploy.sh'
         //     }
         // }
     }
