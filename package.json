@@ -1,0 +1,13 @@
+{
+  "name": "dummy-nodejs-project",
+  "version": "1.0.0",
+  "description": "A minimal Node.js project for Jenkins pipeline testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0",
+    "build": "echo \"No build step defined\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
